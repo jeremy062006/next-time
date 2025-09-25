@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Better Luck Next Time</title>
+    <!-- Use Tailwind CSS for a professional, minimalist look -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Fonts: Montserrat and a fallback for Muller -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700; /* Bold for headings */
+        }
+        /* Color palette */
+        :root {
+            --primary-bg: #f8f9fa; /* Light grey background */
+            --card-bg: #ffffff;    /* White card background */
+            --accent-1: #1a73e8;   /* Strong blue accent */
+            --accent-2: #34a853;   /* Green for success */
+            --accent-3: #ea4335;   /* Red for failure */
+            --text-color: #343a40; /* Dark grey text */
+            --button-text: #ffffff; /* White button text */
+        }
+        body {
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.03);
+        }
+        .icon {
+            font-size: 4rem;
+            color: var(--accent-3);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-8">
+    <div class="card p-8 sm:p-12 text-center max-w-sm w-full">
+        <div class="icon-container mb-6">
+            <i class="fa-regular fa-face-sad-cry icon"></i>
+        </div>
+        <h1 class="text-2xl sm:text-3xl mb-4 font-bold">😢 I'm sorry,</h1>
+        <p class="text-base sm:text-lg mb-8 font-normal leading-relaxed">better luck next time.</p>
+    </div>
+</body>
+</html>
